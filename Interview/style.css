@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    height: 100vh;
+}
+
+h1{
+    color: #fff;
+}
+
+
+
+
+.parent{
+    width: 400px;
+    height: 250px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: rgb(28, 3, 95);
+     
+}
+
+.parent .child{
+    width: 200px;
+    height: 125px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: rgb(247, 240, 206);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes myani{
+    0% {
+		transform: translateY(-100%);
+	}
+	50%{
+		transform: translateY(8%);
+	}
+	65%{
+		transform: translateY(-4%);
+	}
+	80%{
+		transform: translateY(4%);
+	}
+	95%{
+		transform: translateY(-2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="app.css">
+    
+
+    <title>Popup</title>
+  </head>
+  <body>
+
+
+
+
+               <div id="popUpmain" style="display: none;">
+                   <div id="popup">
+                       <h2 id="heading">Click button to Create project</h2>
+                       <a class="close" id="close">x</a>
+                   </div>
+               </div>
+
+               
+
+               <div id='my-welcome-message'>
+                <h2>Welcome to my site</h2>
+                <p>Hello, welcome to my website.</p>
+             </div>
+         
+             
+            <section class="main">
+         
+                <h2>Logo</h2>
+                 <nav>
+                      <ul>
+                        <li>Home</li>
+                        <li>Contact</li>
+                        <li>About</li>
+                      </ul>
+                 </nav>
+      
+            </section>
+               
+            <section class="headsection">
+              
+              <img src="https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+              
+            </section>
+
+
+
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+               <!-- <script>
+                 $(document).ready(function(){
+                      setTimeout(function(){
+
+                        $('#popUpmain').css('display', 'block');},2000)
+
+                        $('.close').click(function(){
+                          $('#popUpmain').css('display', 'none');
+                        })
+                 })
+               </script> -->
+
+               <script>
+                 window.addEventListener("load", function(){
+                      setTimeout(
+                          function open(event){
+                              document.querySelector("#popUpmain").style.display = "block";
+                          },
+                          1000
+                      )
+                  });
+                  document.querySelector("#close").addEventListener("click", function(){
+                      document.querySelector("#popUpmain").style.display = "none";
+                  });
+               </script>
+
+
+
+           
+
+
+<!-- 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+  </body>
+</html>
